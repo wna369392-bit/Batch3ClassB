@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .tooltip-container{
+            position: relative;
+            display: inline-block;
+            margin: 50px;
+        }
+        .tooltip-text{
+            visibility: hidden;
+            width: 300px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            padding: 5px;
+            border-radius: 6px;
+            position: absolute;
+            bottom: 125%; 
+            left: 50%;
+            margin-left: -60px;
+            opacity: 0;
+            transition: opacity 0,5s;
+            z-index: 1;
+        }
+        .mybtn:hover + .tooltip-text{
+            visibility: visible;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+   <div class="tooltip-container">
+    <button class="mybtn">Hover Me</button>
+    <span class="tooltip-text">This is a tooltip</span>
+   </div> 
+</body>
+</html>
