@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Evwnt Listener Example</title>
+</head>
+<body>
+       <div id="container">
+              <h2>Original Heading</h2>
+       </div>
+       <button id="actionBtn">Click Me</button>
+       <script>
+              const actionButton=document.getElementById("actionBtn");
+              const container=document.getElementById("container");
+
+              actionButton.addEventListener("click",function(){
+                     const newParagraph=document.createElement("p");
+                     newParagraph.textContent="Button was clicked! New element added via Event listener";
+                     container.appendChild(newParagraph);
+              });
+       </script>
+</body>
+</html>

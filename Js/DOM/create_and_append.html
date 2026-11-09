@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Create and Append Example</title>
+</head>
+<body>
+       <div id="container">
+              <h2>Original Heading</h2>
+       </div>
+       <script>
+              //Select the container element
+              const container=document.getElementById("container");
+              //1.createElement:Create a new p tag in memory
+              const newParagraph=document.createElement("p");
+              //2.textContent: Inject text into the created element
+              newParagraph.textContent="This is text created and added via Javascript in memory";
+              //3.appendChild:Attach the new node to the visible DOM tree on the screen
+              container.appendChild(newParagraph);
+       </script>
+</body>
+</html>

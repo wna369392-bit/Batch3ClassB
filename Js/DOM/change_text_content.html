@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>DOM Access Example</title>
+</head>
+<body>
+       <div id="app">
+              <h1 id="title">Hello</h1>
+       </div>
+       <script>
+              //1.Select the HTML element
+              const heading=document.getElementById("title");
+              //2.Modify the text value
+              heading.textContent="Hello, JavaScript DOM!"
+       </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Change Text on Click</title>
+</head>
+<body>
+
+    <h2>Change Text on Click</h2>
+
+    <p id="message">Hello, World!</p>
+
+    <button onclick="changeText()">Click Me</button>
+
+    <script>
+        function changeText() {
+            let element = document.getElementById("message");
+            element.textContent = "Hello, JavaScript!";
+
+        }
+    </script>
+
+</body>
+</html>
