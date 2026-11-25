@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Booking Management React Frontend
 
 ## Requirements
@@ -22,3 +23,29 @@
 
 ## Notes
 This is a frontend-only demo. Data is stored in the current browser's localStorage, not in a server/database. The sample records are demo data. Payment confirmation, Zoom links, authentication and real payment processing are not connected to a backend.
+=======
+# Smart Event Tracking System (React + Vite + Tailwind CSS)
+
+Real-world ready Smart Event & Attendee Check-In Tracking System built with React.
+
+## Features
+- **Real-time Dashboard & KPIs:** Track total events, registered attendees, live check-ins, and attendance rate.
+- **Event Management (CRUD):** Create, edit, filter, search, and delete events with capacity tracking, status badges, categories, and locations.
+- **Attendee & Ticket Management:** Register attendees per event, generate unique Ticket IDs (`EVT-XXXX`), and perform one-click Check-In / Undo Check-In.
+- **QR / Ticket Scanner Simulation:** Quick Ticket ID lookup & instant check-in modal for gate staff.
+- **Data Persistence & CSV Export:** Automatically saves all data to `localStorage` and supports one-click CSV report export for attendees and events.
+
+## Quick Start
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
+2. Start development server:
+   ```bash
+   npm run dev
+   ```
+3. Build for production:
+   ```bash
+   npm run build
+   ```
+>>>>>>> 5d0be8ac8102af411fb0dff40851ef98800c4f72
