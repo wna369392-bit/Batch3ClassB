@@ -1,10 +1,24 @@
 //header.js
+"use client";
+import Link from "next/link";
 export default function Header() {
   return (
     <header
-      style={{ backgroundColor: "#1976d2", color: "white", padding: "1rem" }}
+      style={{
+        background: "#1976d2",
+        color: "red",
+        padding: "1rem",
+      }}
     >
-      <h1>My React App</h1>
+      <Link href="/" style={{ color: "red", marginRight: "10px" }}>
+        Home
+      </Link>
+      <Link href="/about" style={{ color: "red", marginRight: "10px" }}>
+        About
+      </Link>
+      <Link href="/contact" style={{ color: "red", marginRight: "10px" }}>
+        Contact
+      </Link>
     </header>
   );
 }
